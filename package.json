@@ -1,0 +1,8 @@
+{
+    "name": "simple-project",
+    "version": "1.0.0",
+    "description": "Integrated Frontend and Backend Project",
+    "scripts": {
+        "start": "node backend/server.js"
+    }
+}
