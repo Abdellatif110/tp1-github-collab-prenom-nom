@@ -3,8 +3,8 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
-// Serve static files from the frontend directory
-app.use(express.static(path.join(__dirname, '../frontend')));
+// Serve static files from the root directory
+app.use(express.static(path.join(__dirname, '..')));
 
 // API route for "Hello World"
 app.get('/api/message', (req, res) => {
@@ -13,7 +13,7 @@ app.get('/api/message', (req, res) => {
 
 // Root route serves the landing page
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend/index.html'));
+    res.sendFile(path.join(__dirname, '../index.html'));
 });
 
 const server = app.listen(port, () => {

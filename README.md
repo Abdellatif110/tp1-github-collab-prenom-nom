@@ -26,15 +26,9 @@ Ce projet est une application simple mais puissante démontrant une intégration
    cd tp1-github-collab-prenom-nom
    ```
 
-2. **Installer les dépendances backend**
+2. **Démarrer l'application**
    ```powershell
-   cd backend
-   npm install
-   cd ..
-   ```
-
-3. **Démarrer l'application**
-   ```powershell
+   npm install --prefix backend
    npm start
    ```
    L'application sera lancée sur : [http://localhost:3000](http://localhost:3000)
